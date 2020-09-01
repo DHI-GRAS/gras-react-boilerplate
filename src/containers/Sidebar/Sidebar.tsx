@@ -1,5 +1,5 @@
 import * as React from "react";
-// import DataProducts from "./DataProducts";
+import SidebarAccordion from "./partials/SidebarAccordion";
 import Description from "./partials/Description";
 import { SidebarTitle } from "@dhi-gras/react-components";
 import { Paper } from "@material-ui/core";
@@ -17,12 +17,12 @@ const Sidebar: React.FC = () => {
       }}
     >
       <SidebarTitle
-        title="Our template"
-        subTitle={["Subtitle example"]}
+        title="React/Typescript template"
+        subTitle={["GRAS react boilerplate"]}
         image={LogoBlue}
       />
       <Description />
-      {/* <DataProducts /> */}
+      <SidebarAccordion />
     </Paper>
   );
 };
