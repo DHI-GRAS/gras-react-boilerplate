@@ -59,7 +59,6 @@ const grasTheme = createMuiTheme({
     },
     body2: {
       fontSize: 12,
-      marginBottom: 16,
     },
   },
   drawerColor: "#ffffff",

@@ -1,40 +1,40 @@
 import * as React from "react";
-import { ReactComponent as MinusIcon } from "@mike/mike-shared-frontend/media/icons/Minus.svg";
-import { ReactComponent as PlusIcon } from "@mike/mike-shared-frontend/media/icons/Plus.svg";
-import { IconButton, Grid } from "@material-ui/core";
+import RemoveIcon from "@material-ui/icons/Remove";
+import AddIcon from "@material-ui/icons/Add";
+import { IconButton, Grid, Box } from "@material-ui/core";
 // import { iconStyle } from "styles/global";
 
 // import "./../styles/searchbar.css";
 type ZoomControlProps = {
   setZoom: any;
-  zoom: number;
+  zoom: number | undefined;
 };
 
 const ZoomControl: React.FC<ZoomControlProps> = ({ setZoom, zoom }) => {
-  const gridStyle = {
+  const gridStyle: React.CSSProperties = {
     position: "fixed",
     left: 0,
     top: "calc(50% - 36px)",
     width: 36,
     boxShadow: "rgba(0, 0, 0, 0.16) 4px 0px 4px",
     zIndex: 100,
+    background: "#fff",
   };
   return (
-    <Grid
-      container
-      // style={gridStyle}
-    >
+    <Box style={gridStyle}>
       <Grid container>
-        <IconButton onClick={() => setZoom(zoom + 1)}>
-          <PlusIcon />
-        </IconButton>
+        <Grid container>
+          <IconButton onClick={() => setZoom(zoom && zoom + 1)}>
+            <AddIcon />
+          </IconButton>
+        </Grid>
+        <Grid container>
+          <IconButton onClick={() => setZoom(zoom && zoom - 1)}>
+            <RemoveIcon />
+          </IconButton>
+        </Grid>
       </Grid>
-      <Grid container>
-        <IconButton onClick={() => setZoom(zoom - 1)}>
-          <MinusIcon />
-        </IconButton>
-      </Grid>
-    </Grid>
+    </Box>
   );
 };
 

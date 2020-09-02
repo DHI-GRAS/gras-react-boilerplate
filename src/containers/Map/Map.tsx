@@ -1,38 +1,54 @@
 import React from "react";
-import ReactMapGL, { FlyToInterpolator } from "react-map-gl";
+import ReactMapGL, { FlyToInterpolator, ViewState } from "react-map-gl";
 import ZoomControl from "./ZoomControl";
-import { AppContext } from "./../../App";
-
 import "mapbox-gl/dist/mapbox-gl.css";
+import { easeCubicInOut } from "d3-ease";
 
 // const { token: accessToken } = require("config.json");
 type MapProps = {
   mobile: boolean;
-  view: Object;
+  view: {
+    latitude: number;
+    longitude: number;
+    zoom: number;
+  };
 };
 
 const Map: React.FC<MapProps> = ({ mobile, view }) => {
-  const {
-    state: { activeProducts },
-  } = React.useContext(AppContext);
   const accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
-  const [viewport, setViewport] = React.useState();
+  const [viewport, setViewport] = React.useState<ViewState | undefined>(
+    undefined
+  );
+
+  React.useEffect(() => {
+    if (view) {
+      const { latitude, longitude, zoom } = view;
+      setViewport({
+        ...{
+          longitude: longitude,
+          latitude: latitude,
+          zoom: zoom,
+          transitionDuration: 2000,
+          transitionInterpolator: new FlyToInterpolator(),
+          transitionEasing: easeCubicInOut,
+        },
+      });
+    } // eslint-disable-next-line
+  }, [view]);
+  const setZoom: Function = (zoom: number) =>
+    setViewport(viewport && { ...viewport, zoom });
+
   return (
     <ReactMapGL
       {...viewport}
-      mapStyle={
-        activeProducts === 8
-          ? "mapbox://styles/mapbox/satellite-v9"
-          : "mapbox://styles/mapbox/light-v9"
-      }
       width="100%"
       height="100%"
       mapboxApiAccessToken={accessToken}
       onViewportChange={setViewport}
     >
-      {/* {!mobile && (
+      {!mobile && (
         <ZoomControl setZoom={setZoom} zoom={viewport && viewport.zoom} />
-      )} */}
+      )}
     </ReactMapGL>
   );
 };
