@@ -8,21 +8,22 @@ import "./App.css";
 export const AppContext: any = React.createContext({});
 
 const App: React.FC = () => {
-  const { width } = useWindowDimensions();
-  const [openSidebar, setOpenSidebar] = React.useState(true);
   const [activeSidebarItem, setActiveSidebarItem] = React.useState(0);
+  const [openSidebar, setOpenSidebar] = React.useState(true);
   const [view] = React.useState({
     longitude: 12.568337,
     latitude: 55.676098,
     zoom: 5.5,
   });
+  const { width } = useWindowDimensions();
+
   const handleToggleDrawer = () => {
     setOpenSidebar(!openSidebar);
   };
   return (
     <AppContext.Provider
       value={{
-        state: { openSidebar, activeSidebarItem },
+        state: { activeSidebarItem, openSidebar },
         actions: { handleToggleDrawer, setActiveSidebarItem },
       }}
     >
