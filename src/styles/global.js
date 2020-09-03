@@ -48,6 +48,22 @@ export const checkboxStyle = makeStyles({
   },
 });
 
+export const sidebarStyle = makeStyles({
+  sidebarWrapper: {
+    overflowX: "hidden",
+    overflowY: "auto",
+    height: "100%",
+  },
+});
+
+export const navigationStyle = makeStyles({
+  appbar: {
+    backgroundColor: "#F2F5F7",
+    borderBottom: " 2px solid #DBE4E9",
+    padding: "0px 16px",
+  },
+});
+
 export const buttonStyle = makeStyles({
   button: {
     backgroundColor: "#F2F5F7",

@@ -39,7 +39,7 @@ const SidebarAccordion = () => {
 
   return (
     <>
-      <Typography variant="h6">Accordion items</Typography>
+      <Typography variant="h3">Accordion items</Typography>
       {items &&
         items.map(({ title, comp: Component }: dataProductType, i: number) => (
           <Accordion key={i} expanded={activeSidebarItem === i}>
@@ -53,12 +53,7 @@ const SidebarAccordion = () => {
                   : setActiveSidebarItem(i)
               }
             >
-              <Typography
-                variant="h5"
-                style={{ fontSize: 12, fontWeight: 500 }}
-              >
-                {title}
-              </Typography>
+              <Typography variant="h5">{title}</Typography>
             </AccordionSummary>
 
             <AccordionDetails>

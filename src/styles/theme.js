@@ -44,7 +44,7 @@ const grasTheme = createMuiTheme({
       borderBottom: "1px solid #DBE4E9",
     },
     h4: { fontSize: 12, fontWeight: 400, color: "#86a2b3" },
-    h5: { color: "#0B4566", fontSize: 12 },
+    h5: { color: "#0B4566", fontSize: 12, fontWeight: 500 },
     h6: {
       color: "#0B4566",
       fontSize: 14,
