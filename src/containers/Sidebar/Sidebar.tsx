@@ -3,7 +3,7 @@ import SidebarAccordion from "./SidebarAccordion";
 import Description from "./Description";
 import { SidebarTitle } from "@dhi-gras/react-components";
 import { Paper } from "@material-ui/core";
-import LogoBlue from "./../../assets/DHI_Logo_Blue.png";
+import LogoBlue from "assets/DHI_Logo_Blue.png";
 
 const Sidebar: React.FC = () => {
   return (

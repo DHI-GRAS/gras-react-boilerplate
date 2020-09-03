@@ -8,7 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 
-import dhiLogo from "./../../assets/DHI_Logo_Blue.png";
+import dhiLogo from "assets/DHI_Logo_Blue.png";
 
 const Navigation: React.FC = () => {
   const [isAuth] = React.useState(false);
