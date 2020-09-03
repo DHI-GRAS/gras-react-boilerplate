@@ -3,8 +3,8 @@ import ReactMapGL, { FlyToInterpolator, ViewState } from "react-map-gl";
 import ZoomControl from "./ZoomControl";
 import "mapbox-gl/dist/mapbox-gl.css";
 import { easeCubicInOut } from "d3-ease";
+const accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
 
-// const { token: accessToken } = require("config.json");
 type MapProps = {
   mobile: boolean;
   view: {
@@ -15,7 +15,6 @@ type MapProps = {
 };
 
 const Map: React.FC<MapProps> = ({ mobile, view }) => {
-  const accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
   const [viewport, setViewport] = React.useState<ViewState | undefined>(
     undefined
   );
