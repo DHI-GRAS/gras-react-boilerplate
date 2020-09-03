@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.dhi-gras.com/" rel="noopener" target="_blank"><img width="150" src="./src/assets/images/DHI_GRAS_Logo_Pos_RGB.png" alt="Dhi-GRAS logo"></a></p>
+  <a href="https://www.dhi-gras.com/" rel="noopener" target="_blank"><img width="150" src="./src/assets/DHI_GRAS_Logo_Pos_RGB.png" alt="Dhi-GRAS logo"></a></p>
 </p>
 
 <h1 align="center">gras-react-boilerplate</h1>
