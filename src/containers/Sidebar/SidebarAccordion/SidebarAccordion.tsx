@@ -8,7 +8,7 @@ import {
 } from "@material-ui/core";
 
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { AppContext } from "./../../../../App";
+import { AppContext } from "./../../../App";
 
 const DefaultContent: React.FC = () => {
   return (

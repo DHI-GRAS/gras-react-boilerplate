@@ -1,6 +1,6 @@
 import * as React from "react";
-import SidebarAccordion from "./partials/SidebarAccordion";
-import Description from "./partials/Description";
+import SidebarAccordion from "./SidebarAccordion";
+import Description from "./Description";
 import { SidebarTitle } from "@dhi-gras/react-components";
 import { Paper } from "@material-ui/core";
 import LogoBlue from "./../../assets/DHI_Logo_Blue.png";
