@@ -5,8 +5,6 @@ import { SidebarTitle } from "@dhi-gras/react-components";
 import { Paper } from "@material-ui/core";
 import LogoBlue from "./../../assets/DHI_Logo_Blue.png";
 
-import "./../../styles/scrollbar.css";
-
 const Sidebar: React.FC = () => {
   return (
     <Paper
