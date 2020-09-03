@@ -8,7 +8,7 @@
   "author": "DHI GRAS",
   "license": "MIT",
   "bin": {
-    "create-gras-app": "./bin/index.js"
+    "gras-react-boilerplate": "./bin/index.js"
   },
   "dependencies": {
     "@dhi-gras/react-components": "^1.8.0",
