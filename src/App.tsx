@@ -2,6 +2,7 @@ import * as React from "react";
 import Map from "./containers/Map";
 import Sidebar from "./containers/Sidebar";
 import SidebarControl from "./containers/SidebarControl";
+import Navigation from "./components/Navigation/Navigation";
 import { Box } from "@material-ui/core";
 import { useWindowDimensions } from "./utils";
 export const AppContext: any = React.createContext({});
@@ -26,6 +27,7 @@ const App: React.FC = () => {
         actions: { handleToggleDrawer, setActiveSidebarItem },
       }}
     >
+      <Navigation />
       <div
         style={{
           width: "100%",

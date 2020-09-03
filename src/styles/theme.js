@@ -50,8 +50,6 @@ const grasTheme = createMuiTheme({
       fontSize: 14,
       backgroundColor: "#F2F5F7",
       padding: "8px 16px",
-      borderTop: "1px solid #DBE4E9",
-      borderBottom: "1px solid #DBE4E9",
     },
     subtitle1: {
       fontSize: 12,
@@ -85,6 +83,9 @@ const grasTheme = createMuiTheme({
         "&:disabled": {
           backgroundColor: "rgb(242, 245, 247)",
           color: "rgba(207,219,226)",
+        },
+        "&:hover": {
+          backgroundColor: "#0076C8",
         },
       },
     },
