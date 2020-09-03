@@ -80,6 +80,6 @@ my-app
         │       ├── SidebarAccordion.tsx
         │       └── index.ts
         └── SidebarControl
-            ├── Navigation.tsx
+            ├── SidebarControl.tsx
             └── index.ts
 ```
