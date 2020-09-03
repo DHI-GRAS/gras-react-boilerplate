@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   AppBar,
   Box,
@@ -6,9 +6,9 @@ import {
   Grid,
   Toolbar,
   Typography,
-} from "@material-ui/core";
-import { navigationStyle } from "./../../styles/global";
-import dhiLogo from "assets/DHI_Logo_Blue.png";
+} from '@material-ui/core';
+import { navigationStyle } from './../../styles/global';
+import dhiLogo from './../../assets/DHI_Logo_Blue.png';
 
 const Navigation: React.FC = () => {
   const [isAuth] = React.useState(false);
@@ -23,7 +23,7 @@ const Navigation: React.FC = () => {
             </Box>
           </Toolbar>
         </Grid>
-        <Grid item xs={4} style={{ textAlign: "center" }}>
+        <Grid item xs={4} style={{ textAlign: 'center' }}>
           <Typography variant="h6" color="primary" noWrap>
             GRAS React Boilerplate
           </Typography>
@@ -33,7 +33,7 @@ const Navigation: React.FC = () => {
             {isAuth ? (
               <></>
             ) : (
-              <Box display={"flex"} justifyContent={"flex-end"}>
+              <Box display={'flex'} justifyContent={'flex-end'}>
                 <Button
                   variant="contained"
                   color="secondary"
