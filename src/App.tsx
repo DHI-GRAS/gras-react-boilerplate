@@ -4,7 +4,6 @@ import Sidebar from "./containers/Sidebar";
 import SidebarControl from "./containers/SidebarControl";
 import { Box } from "@material-ui/core";
 import { useWindowDimensions } from "./utils";
-import "./App.css";
 export const AppContext: any = React.createContext({});
 
 const App: React.FC = () => {
