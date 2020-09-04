@@ -150,13 +150,6 @@ exec(
     );
 
     console.log(chalk.green.bold('\nsucces ') + 'Dependencies installed.');
-    // console.log(chalk.blue.bold('\ninfo ') + 'Installing devDependencies...');
-
-    // execSync(`cd ${process.argv[2]} && npm install dotenv env-cmd --save-dev`, {
-    //   stdio: [0, 1, 2],
-    // });
-
-    // console.log(chalk.green.bold('\nsucces ') + 'devDependencies installed.');
 
     console.log(
       chalk.blue.bold('\ninfo ') +
