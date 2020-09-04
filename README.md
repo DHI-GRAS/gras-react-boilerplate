@@ -5,11 +5,12 @@
 <h1 align="center">gras-react-boilerplate</h1>
 <div align="center">
 
-![release](https://github.com/DHI-GRAS/gras-react-boilerplate/workflows/release/badge.svg)
+![release](https://github.com/DHI-GRAS/gras-react-boilerplate/workflows/npm%20publish/badge.svg)
 [![Latest](https://img.shields.io/npm/v/@dhi-gras/gras-react-boilerplate/latest)](https://www.npmjs.com/package/@dhi-gras/gras-react-boilerplate)
 
 </div>
-GRAS mobile-friendly boilerplate for map-centric apps. The npm package can be found [here](https://www.npmjs.com/package/@dhi-gras/react-components)https://www.npmjs.com/package/gras-react-boilerplate
+
+GRAS mobile-friendly boilerplate for map-centric apps. The npm package can be found [here](https://www.npmjs.com/package/@dhi-gras/react-components)
 
 This package is created using [TypeScript](https://www.typescriptlang.org/), [MaterialUI](https://material-ui.com/), [React-map-gl](https://visgl.github.io/react-map-gl/) and [@dhi-gras/react-components](https://storybookpro.z6.web.core.windows.net)
 
