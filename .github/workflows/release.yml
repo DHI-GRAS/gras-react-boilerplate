@@ -24,9 +24,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: yarn install --frozen-lockfile
+      - run: npm ci
       - name: Semantic Release
-        run: yarn semantic-release
+        run: npm run semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
