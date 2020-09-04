@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.5...v1.1.6) (2020-09-04)
+
+
+### Bug Fixes
+
+* **release:** trigger patch release ([d8ea0ec](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/d8ea0ec103cd5504f82c714054b8d5f6ee7ccb64))
+
 ## [1.1.5](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.4...v1.1.5) (2020-09-04)
 
 
