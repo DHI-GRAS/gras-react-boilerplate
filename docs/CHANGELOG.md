@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.2...v1.1.3) (2020-09-04)
+
+
+### Bug Fixes
+
+* **gh-package:** Add deployment on gh packages separately ([905cfec](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/905cfec5994ef0212694cac9b67ef2fe8655df00))
+
 ## [1.1.2](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.1...v1.1.2) (2020-09-03)
 
 
