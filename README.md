@@ -39,7 +39,6 @@ To create a new app, you may choose one of the following methods:
 ### NPX
 
 ```
-// with npx
 npx gras-react-boilerplate my-app
 ```
 
