@@ -123,7 +123,6 @@ exec(
       chalk.green.bold('\nsuccess ') + chalk.white.bold('Readme generated!')
     );
 
-    // installing dependencies
     console.log(
       chalk.blue.bold('\ninfo ') +
         'Installing dependencies. It might take a while...\n'
