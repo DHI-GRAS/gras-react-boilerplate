@@ -5,8 +5,8 @@
 <h1 align="center">gras-react-boilerplate</h1>
 <div align="center">
 
-[![Build](https://travis-ci.com/DHI-GRAS/react-components.svg?branch=master)](https://travis-ci.com/DHI-GRAS/react-components)
-[![Latest](https://img.shields.io/npm/v/@dhi-gras/react-components/latest)](https://www.npmjs.com/package/@dhi-gras/react-components)
+![release](https://github.com/DHI-GRAS/gras-react-boilerplate/workflows/release/badge.svg)
+[![Latest](https://img.shields.io/npm/v/@dhi-gras/gras-react-boilerplate/latest)](https://www.npmjs.com/package/@dhi-gras/gras-react-boilerplate)
 
 </div>
 GRAS mobile-friendly boilerplate for map-centric apps. The npm package can be found [here](https://www.npmjs.com/package/@dhi-gras/react-components)https://www.npmjs.com/package/gras-react-boilerplate
@@ -17,19 +17,56 @@ This package is created using [TypeScript](https://www.typescriptlang.org/), [Ma
 
 Showcase of our components and libraries on the [GRAS Storybook](https://storybookpro.z6.web.core.windows.net/)
 
-# Usage
+# Quick overview
 
 You can simply import the package using `npx`.
 
 ```
 // with npx
 npx gras-react-boilerplate my-app
+cd my-app
+npm start
+```
+
+If you've previously installed gras-react-boilerplate globally via `npm install -g @dhi-gras/gras-react-boilerplate`, we recommend you to uninstall the package using `npm uninstall -g @dhi-gras/gras-react-boilerplate` or `yarn global remove @dhi-gras/gras-react-boilerplate` to ensure that `npx` always uses the latest version.
+
+# Creating an App
+
+To create a new app, you may choose one of the following methods:
+
+### NPX
+
+```
+// with npx
+npx gras-react-boilerplate my-app
+```
+
+### NPM
+
+```
+npm install @dhi-gras/gras-react-boilerplate -g
+
+// and then use it as
+gras-react-boilerplate my-app
+```
+
+### Yarn
+
+```
+yarn global add @dhi-gras/gras-react-boilerplate
+
+// and use it as
+gras-react-boilerplate my-app
 ```
 
 It will create a directory called "my-app" inside the current folder.
 Inside the directory, it will generate the initial project structure and install the dependencies.
 
-# Folder structure
+```
+cd my-app
+```
+
+# Project structure
 
 ```
 my-app
@@ -83,3 +120,17 @@ my-app
             ├── SidebarControl.tsx
             └── index.ts
 ```
+
+# Getting started
+
+Inside the newly created project, you can run:
+
+### `npm start`
+
+Runs the app in development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
