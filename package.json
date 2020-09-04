@@ -4,7 +4,10 @@
   "private": false,
   "description": "A react boilerplate to get your app started",
   "main": "index.js",
-  "repository": "https://github.com/DHI-GRAS/gras-react-boilerplate.git",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/DHI-GRAS/gras-react-boilerplate.git"
+  },
   "author": "DHI GRAS",
   "license": "MIT",
   "bin": {
