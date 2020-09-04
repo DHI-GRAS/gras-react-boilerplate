@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.6...v1.1.7) (2020-09-04)
+
+
+### Bug Fixes
+
+* **workflow:** add ref for publish ([6d35175](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/6d35175a23e21caaf672f980d5ad2fa9e6381b3b))
+
 ## [1.1.6](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.5...v1.1.6) (2020-09-04)
 
 
