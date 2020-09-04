@@ -8,9 +8,7 @@ const chalk = require('chalk');
 const packageJson = require('./../package.json');
 
 const scripts = `"start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"`;
+    "build": "react-scripts build"`;
 const browserList = `"browserslist": {
     "production": [
       ">0.2%",
@@ -71,7 +69,11 @@ exec(
       return;
     }
 
-    const filesToCopy = ['README.md', 'tsconfig.json', '.prettierrc.js'];
+    const filesToCopy = [
+      'README_to_copy.md',
+      'tsconfig.json',
+      '.prettierrc.js',
+    ];
 
     for (let i = 0; i < filesToCopy.length; i += 1) {
       fs.createReadStream(path.join(__dirname, `../${filesToCopy[i]}`)).pipe(
@@ -103,12 +105,27 @@ exec(
     );
 
     console.log(
-      chalk.green.bold('\nsuccess ') + chalk.white.bold('npm init -- done\n')
+      chalk.green.bold('\nsuccess ') + chalk.white.bold('npm init -- done')
+    );
+
+    console.log(
+      chalk.blue.bold('\ninfo ') + chalk.white.bold('Generating readme...')
+    );
+
+    execSync(
+      `cd ${process.argv[2]} && rename README_to_copy.md README.md`,
+      (err) => {
+        if (err) throw err;
+      }
+    );
+
+    console.log(
+      chalk.green.bold('\nsuccess ') + chalk.white.bold('Readme generated!')
     );
 
     // installing dependencies
     console.log(
-      chalk.blue.bold('info ') +
+      chalk.blue.bold('\ninfo ') +
         'Installing dependencies. It might take a while...\n'
     );
 
