@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.7...v1.1.8) (2020-09-04)
+
+
+### Bug Fixes
+
+* **readme:** remove //with npx ([e36511b](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/e36511befadcea53dcb50d398dedb4bd1597aa5a))
+
 ## [1.1.7](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.6...v1.1.7) (2020-09-04)
 
 
