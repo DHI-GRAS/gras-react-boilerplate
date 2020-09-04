@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.4...v1.1.5) (2020-09-04)
+
+
+### Bug Fixes
+
+* **gh-release:** Add url to package json to make it appear on the repo ([054f849](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/054f849ba46f3e88446c85558007526324450e28))
+
 ## [1.1.4](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.3...v1.1.4) (2020-09-04)
 
 
