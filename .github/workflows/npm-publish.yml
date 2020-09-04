@@ -48,6 +48,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
+      - name: Package Version Check Action
+        uses: technote-space/package-version-check-action@v1.5.2
         with:
           node-version: 12
           registry-url: https://npm.pkg.github.com/
