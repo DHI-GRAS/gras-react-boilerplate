@@ -1,3 +1,10 @@
+## [1.1.4](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.3...v1.1.4) (2020-09-04)
+
+
+### Bug Fixes
+
+* **scope:** Remove scope from gh registry ([51207d2](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/51207d28a3ea39f945dc91833d75b8c9e878dfe0))
+
 ## [1.1.3](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.2...v1.1.3) (2020-09-04)
 
 
