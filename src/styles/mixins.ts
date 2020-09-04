@@ -1,34 +1,34 @@
 export const directionRow = {
   display: 'flex',
-  flexDirection: 'row'
+  flexDirection: 'row',
 };
 
 export const directionColumn = {
   display: 'flex',
-  flexDirection: 'column'
+  flexDirection: 'column',
 };
 
 export const justifySpaceBetween = {
   display: 'flex',
-  justifyContent: 'space-between'
+  justifyContent: 'space-between',
 };
 
 export const justifySpaceAround = {
   display: 'flex',
-  justifyContent: 'space-around'
+  justifyContent: 'space-around',
 };
 
 export const justifyEnd = {
   display: 'flex',
-  justifyContent: 'flex-end'
+  justifyContent: 'flex-end',
 };
 
 export const justifyCenter = {
   display: 'flex',
-  justifyContent: 'center'
+  justifyContent: 'center',
 };
 
 export const alignCenter = {
   display: 'flex',
-  alignItems: 'center'
+  alignItems: 'center',
 };
