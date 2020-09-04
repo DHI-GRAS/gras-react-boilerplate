@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.1...v1.1.2) (2020-09-03)
+
+
+### Bug Fixes
+
+* **release:** Count on semantic release for deployment ([3a20f36](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/3a20f36bd1296063cc82d97eeca5a8a25ae90ed0))
+
 ## [1.1.1](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.0...v1.1.1) (2020-09-03)
 
 
