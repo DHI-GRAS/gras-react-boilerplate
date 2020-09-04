@@ -15,7 +15,7 @@ This package is created using [TypeScript](https://www.typescriptlang.org/), [Ma
 
 # Showcase
 
-Showcase of our components and libraries on the [GRAS Storybook](https://storybookpro.z6.web.core.windows.net/)
+Showcase of our componentss and libraries on the [GRAS Storybook](https://storybookpro.z6.web.core.windows.net/)
 
 # Usage
 
