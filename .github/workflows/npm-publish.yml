@@ -27,9 +27,13 @@ jobs:
       - run: yarn install --frozen-lockfile
       - name: Semantic Release
         uses: cycjimmy/semantic-release-action@v2
+        with:
+          registry-url: https://npm.pkg.github.com/dhi-gras/
+      - run: npm publish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
   # publish:
   #   needs: release
   #   runs-on: ubuntu-latest
@@ -50,9 +54,9 @@ jobs:
   #     - uses: actions/setup-node@v1
   #     - name: Package Version Check Action
   #       uses: technote-space/package-version-check-action@v1.5.2
-  #       with:
-  #         node-version: 12
-  #         registry-url: https://npm.pkg.github.com/
-  #     - run: npm publish
-  #       env:
-  #         NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
+  #   with:
+  #     node-version: 12
+  #     registry-url: https://npm.pkg.github.com/dhi-gras/
+  # - run: npm publish
+  #   env:
+  #     NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}

@@ -8,6 +8,10 @@
     "type": "git",
     "url": "ssh://git@github.com/DHI-GRAS/gras-react-boilerplate.git"
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "tag": "latest"
+  },
   "author": "DHI GRAS",
   "license": "MIT",
   "bin": {
