@@ -7,8 +7,10 @@ const { exec, execSync } = require('child_process');
 const chalk = require('chalk');
 const packageJson = require('./../package.json');
 
-const scripts = `"start": "react-scripts start",
-    "build": "react-scripts build"`;
+const scripts = `"start": "react-scripts --max_old_space_size=4096 start",
+    "start:production" : "env-cmd -f .env.production react-scripts --max_old_space_size=4096 start",
+    "build": "react-scripts build",
+    "build:development": "env-cmd -f .env.development react-scripts --max_old_space_size=4096 build"`;
 const browserList = `"browserslist": {
     "production": [
       ">0.2%",
@@ -109,7 +111,7 @@ exec(
     );
 
     console.log(
-      chalk.blue.bold('\ninfo ') + chalk.white.bold('Generating readme...')
+      chalk.blue.bold('\ninfo ') + chalk.white.bold('Generating files...')
     );
 
     execSync(
@@ -119,8 +121,19 @@ exec(
       }
     );
 
+    console.log(chalk.white.bold('+ [1/2] Readme'));
+
+    execSync(
+      `cd ${process.argv[2]} && echo REACT_APP_MAPBOX_TOKEN= > .env.development && echo REACT_APP_MAPBOX_TOKEN= > .env.production`,
+      (err) => {
+        if (err) throw err;
+      }
+    );
+
+    console.log(chalk.white.bold('+ [2/2] Environment variables'));
+
     console.log(
-      chalk.green.bold('\nsuccess ') + chalk.white.bold('Readme generated!')
+      chalk.green.bold('\nsuccess ') + chalk.white.bold('Files generated.')
     );
 
     console.log(
@@ -129,9 +142,21 @@ exec(
     );
 
     const deps = getDeps(packageJson.dependencies);
-    execSync(`cd ${process.argv[2]} && npm install ${deps}`, {
-      stdio: [0, 1, 2],
-    });
+    execSync(
+      `cd ${process.argv[2]} && npm install ${deps} && npm install dotenv env-cmd --save-dev`,
+      {
+        stdio: [0, 1, 2],
+      }
+    );
+
+    console.log(chalk.green.bold('\nsucces ') + 'Dependencies installed.');
+    // console.log(chalk.blue.bold('\ninfo ') + 'Installing devDependencies...');
+
+    // execSync(`cd ${process.argv[2]} && npm install dotenv env-cmd --save-dev`, {
+    //   stdio: [0, 1, 2],
+    // });
+
+    // console.log(chalk.green.bold('\nsucces ') + 'devDependencies installed.');
 
     console.log(
       chalk.blue.bold('\ninfo ') +
