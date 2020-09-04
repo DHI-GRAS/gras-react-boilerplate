@@ -5,7 +5,8 @@
 <h1 align="center">gras-react-boilerplate</h1>
 <div align="center">
 
-![Npm publish](https://github.com/DHI-GRAS/gras-react-boilerplate/workflows/Npm%20publish/badge.svg)
+![Release](https://github.com/DHI-GRAS/gras-react-boilerplate/workflows/Release/badge.svg)
+![Publish](https://github.com/DHI-GRAS/gras-react-boilerplate/workflows/Publish/badge.svg)
 [![Latest](https://img.shields.io/npm/v/@dhi-gras/gras-react-boilerplate/latest)](https://www.npmjs.com/package/@dhi-gras/gras-react-boilerplate)
 
 </div>
