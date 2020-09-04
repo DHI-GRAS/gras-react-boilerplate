@@ -1,16 +1,13 @@
 {
-  "name": "gras-react-boilerplate",
+  "name": "@dhi-gras/gras-react-boilerplate",
   "version": "1.1.5",
   "private": false,
   "description": "A react boilerplate to get your app started",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/DHI-GRAS/gras-react-boilerplate.git"
-  },
+  "repository": "https://github.com/DHI-GRAS/gras-react-boilerplate",
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "tag": "latest"
+    "name": "@dhi-gras/gras-react-boilerplate",
+    "access": "public"
   },
   "author": "DHI GRAS",
   "license": "MIT",
@@ -54,7 +51,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "semantic-release": "npx semantic-release"
   },
   "eslintConfig": {
     "extends": "react-app"
