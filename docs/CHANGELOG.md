@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.2.0...v1.2.1) (2020-09-04)
+
+
+### Bug Fixes
+
+* **typescript:** Replace js to ts ([f9daf93](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/f9daf9372b1430cbdb971abcc0474472f4ab2100))
+
 # [1.2.0](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.10...v1.2.0) (2020-09-04)
 
 
