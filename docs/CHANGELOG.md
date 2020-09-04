@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.9...v1.1.10) (2020-09-04)
+
+
+### Bug Fixes
+
+* **npm:** Migrate from yarn to npm ([9b9febc](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/9b9febc6a2fb933dabce7bae379dc24b29759f91))
+
 ## [1.1.9](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.8...v1.1.9) (2020-09-04)
 
 
