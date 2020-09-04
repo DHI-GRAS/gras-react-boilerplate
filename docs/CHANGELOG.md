@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.10...v1.2.0) (2020-09-04)
+
+
+### Bug Fixes
+
+* **readme:** Add instructions for env variables to generated readme ([cf685f5](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/cf685f5c130af88e95e07f93ce90f76f02b77bba))
+
+
+### Features
+
+* **environment-var:** Bootstrap env variables ([ad28a1f](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/ad28a1fd4e84dfe0ecf1b1346c2ae1b46d7227e2))
+
 ## [1.1.10](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.1.9...v1.1.10) (2020-09-04)
 
 
