@@ -113,13 +113,21 @@ exec(
     console.log(
       chalk.blue.bold('\ninfo ') + chalk.white.bold('Generating files...')
     );
-
-    execSync(
-      `cd ${process.argv[2]} && rename README_to_copy.md README.md`,
-      (err) => {
-        if (err) throw err;
-      }
-    );
+    if (process.platform === 'linux' || 'darwin') {
+      execSync(
+        `cd ${process.argv[2]} && mv README_to_copy.md README.md`,
+        (err) => {
+          if (err) throw err;
+        }
+      );
+    } else {
+      execSync(
+        `cd ${process.argv[2]} && rename README_to_copy.md README.md`,
+        (err) => {
+          if (err) throw err;
+        }
+      );
+    }
 
     console.log(chalk.white.bold('+ [1/2] Readme'));
 
