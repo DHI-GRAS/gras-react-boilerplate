@@ -58,6 +58,10 @@ console.log(
   chalk.blue.bold('info ') +
     chalk.white.bold(`Creating the app at "${process.argv[2]}"`)
 );
+console.log(
+  chalk.blue.bold('info ') +
+    chalk.white.bold(`Running on "${process.platform}"`)
+);
 // create folder and initialize npm
 exec(
   `mkdir ${process.argv[2]} && cd ${process.argv[2]} && npm init --force`,
