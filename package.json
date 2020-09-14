@@ -1,6 +1,6 @@
 {
   "name": "@dhi-gras/gras-react-boilerplate",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "private": false,
   "description": "A react boilerplate to get your app started",
   "main": "index.js",

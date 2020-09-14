@@ -1,3 +1,10 @@
+## [1.2.2](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.2.1...v1.2.2) (2020-09-14)
+
+
+### Bug Fixes
+
+* **os:** Trigger release and add messsage ([86febf8](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/86febf8fa59f6b6f2c9297bc642f6aadf92ab2fb))
+
 ## [1.2.1](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.2.0...v1.2.1) (2020-09-04)
 
 
