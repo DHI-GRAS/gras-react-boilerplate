@@ -212,6 +212,13 @@ const grasTheme = createMuiTheme({
         borderRadius: 4,
       },
     },
+    MuiSvgIcon: {
+      root: {
+        color: '#0B4566',
+        width: 16,
+        height: 16,
+      },
+    },
     MuiToolbar: {
       regular: {
         minHeight: 56,
