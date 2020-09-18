@@ -1,14 +1,14 @@
-import * as React from "react";
+import * as React from 'react';
 import {
   Accordion,
   AccordionDetails,
   AccordionSummary,
   Typography,
   Box,
-} from "@material-ui/core";
+} from '@material-ui/core';
 
-import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { AppContext } from "./../../../App";
+import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import { AppContext } from './../../../App';
 
 const DefaultContent: React.FC = () => {
   return (
@@ -27,9 +27,16 @@ type dataProductType = {
 };
 
 const items = [
-  { title: "Title 1", comp: DefaultContent },
-  { title: "Title 2", comp: DefaultContent },
+  { title: 'Title 1', comp: DefaultContent },
+  { title: 'Title 2', comp: DefaultContent },
 ];
+
+const styles = {
+  smallIcon: {
+    width: 16,
+    height: 16,
+  },
+};
 
 const SidebarAccordion = () => {
   const {
@@ -44,7 +51,9 @@ const SidebarAccordion = () => {
         items.map(({ title, comp: Component }: dataProductType, i: number) => (
           <Accordion key={i} expanded={activeSidebarItem === i}>
             <AccordionSummary
-              expandIcon={<ExpandMoreIcon color="primary" />}
+              expandIcon={
+                <ExpandMoreIcon color="primary" style={styles.smallIcon} />
+              }
               aria-controls="panel1bh-content"
               id="panel1bh-header"
               onClick={() =>
