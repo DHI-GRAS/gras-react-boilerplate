@@ -2,7 +2,7 @@
   "name": "@dhi-gras/gras-react-boilerplate",
   "version": "1.2.2",
   "private": false,
-  "description": "A react boilerplate to get your app started",
+  "description": "A react boilerplate to get your GRAS app started",
   "main": "index.js",
   "repository": "https://github.com/DHI-GRAS/gras-react-boilerplate",
   "publishConfig": {

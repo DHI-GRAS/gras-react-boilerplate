@@ -185,7 +185,6 @@ const grasTheme = createMuiTheme({
         padding: 2,
       },
     },
-
     MuiPaper: {
       root: {
         color: '#0B4566',
@@ -223,6 +222,19 @@ const grasTheme = createMuiTheme({
         '@media (min-width: 600px)': {
           minHeight: 56,
         },
+      },
+    },
+    MuiSlider: {
+      rail: {
+        height: 3,
+        backgroundColor: '#DBE4E9',
+      },
+      track: {
+        height: 3,
+      },
+      thumb: {
+        height: 14,
+        width: 14,
       },
     },
   },
