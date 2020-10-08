@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.2.2...v1.3.0) (2020-10-08)
+
+
+### Features
+
+* **theme-mui-slider:** add styling for MuiSlider ([c7d1cf7](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/c7d1cf73f21f62eaf10adf2ab720a98f3b1b7d17))
+
 ## [1.2.2](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.2.1...v1.2.2) (2020-09-14)
 
 
