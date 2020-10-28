@@ -115,9 +115,10 @@ exec(
     );
 
     console.log(
-      chalk.blue.bold('\ninfo ') + chalk.white.bold('Generating files...')
+      chalk.blue.bold('\ninfo ') + chalk.white.bold('Generaasdasdting files...')
     );
-    if (process.platform === 'linux' || 'darwin') {
+
+    if (process.platform === 'linux' || process.platform === 'darwin') {
       execSync(
         `cd ${process.argv[2]} && mv README_to_copy.md README.md`,
         (err) => {
