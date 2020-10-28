@@ -115,7 +115,7 @@ exec(
     );
 
     console.log(
-      chalk.blue.bold('\ninfo ') + chalk.white.bold('Generaasdasdting files...')
+      chalk.blue.bold('\ninfo ') + chalk.white.bold('Generating files...')
     );
 
     if (process.platform === 'linux' || process.platform === 'darwin') {
