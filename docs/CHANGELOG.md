@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.3.0...v1.3.1) (2020-10-29)
+
+
+### Bug Fixes
+
+* **conditional-os:** Add the correct conditional for os ([b4019ea](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/b4019ea6484785ff22f8089b963c8a89686040dc))
+* **conditional-os:** Fix spelling ([2dcb92f](https://github.com/DHI-GRAS/gras-react-boilerplate/commit/2dcb92faaca81598fc87ceeee4f90483b6da26d1))
+
 # [1.3.0](https://github.com/DHI-GRAS/gras-react-boilerplate/compare/v1.2.2...v1.3.0) (2020-10-08)
 
 
